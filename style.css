@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins' sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+.float-left {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header.sticky {
+    padding: 10px 100px;
+    background-color: crimson;
+}
+
+header {
+    position: fixed;
+    background: rgba(255, 225, 225, 0.1);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+
+header .navigation {
+    position: relative;
+}
+
+header .navigation a:hover {
+    color: crimson;
+    transition: .5s ease;
+}
+
+section {
+    padding: 100px;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url("./imges/1612425537_164-p-bambuk-na-korichnevom-fone-233.jpg"), no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main .content {
+    max-width: 800px;
+}
+
+.main .content h2 {
+    color: #fff;
+}
+
+.animated-text h4:nth-child(1) {
+    animation: text-move 10s infinite;
+}
+
+.btnn {
+    background-color: crimson;
+    padding: 20px;
+    color: white;
+    margin-top: 60px;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: crimson;
+}
+
+.title {
+    color: crimson;
+    font: 600;
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.line {
+    width: 100%;
+    background: crimson;
+    color: transparent;
+    border-radius: 10px;
+}
+
+.linee {
+    border-radius: 10px;
+    width: 200%;
+    background: crimson;
+    color: transparent;
+}
+
+.lineee {
+    width: 400%;
+    border-radius: 10px;
+    background: crimson;
+    color: transparent;
+}
+
+.fsss:hover {
+    transform: translateY(-10px);
+    color: crimson;
+}
+
+.fsss {
+    text-decoration: none;
+    color: crimson;
+}
+
+.lineeee {
+    width: 800%;
+    border-radius: 10px;
+    background: crimson;
+    color: transparent;
+}
+
+.herasre {
+    text-align: center;
+}
+
+@keyframes text-move {
+    0% {
+        margin-top: 0;
+    }
+    25% {
+        margin-top: -70px;
+    }
+    50% {
+        margin-top: 140px;
+    }
+    75% {
+        margin-top: 70px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+.animated-text {
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+}
+
+.animated-text h4 {
+    color: crimson;
+    font-size: 36px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.main .content h2 span {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+header .navigation a {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+header .brand {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.hover:hover {
+    width: 100%;
+    transition: .5s ease;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*Loader's styles bigin*/
+
+.loader {
+    height: 100vh;
+    width: 100%;
+    background: rgb(131, 58, 180);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    transition: all .5s ease;
+}
+
+.ring::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid yellow;
+    border-top-color: transparent;
+    animation: rotate 1s linear infinite;
+}
+
+.ring {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    background-color: transparent;
+    height: 45px;
+    border: 5px solid blue;
+    border-radius: 50%;
+    position: relative;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*Loader's styles end*/
+
+
+/*Loader's styles bigin*/
+
+.loader1 {
+    height: 100vh;
+    width: 100%;
+    background: rgb(131, 58, 180);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    transition: all 1s ease;
+}
+
+.ring1::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 20px solid rgb(61, 58, 255);
+    border-top-color: rgb(131, 58, 180);
+    animation: rotatee 1s linear infinite;
+}
+
+.ring1 {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(131, 58, 180);
+    border: 20px solid;
+    border-radius: 50%;
+    position: relative;
+}
+
+@keyframes rotatee {
+    1% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*Loader's styles end*/
+
+
+/*Loader's styles bigin*/
+
+.loader {
+    height: 100vh;
+    width: 100%;
+    background: rgb(131, 58, 180);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    transition: all .5s ease;
+}
+
+.ring::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 20px solid white;
+    border-top-color: rgb(131, 58, 180);
+    animation: rotate 1s linear infinite;
+}
+
+.ring {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*Loader's styles end*/
